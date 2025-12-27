@@ -1,108 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Survey Form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+  <h1 id="title">Survey Form</h1>
 
-        <h1 id="title">Student Feedback Survey</h1>
-        <p id="description">
-            Your feedback helps us improve the learning experience.
-        </p>
+  <p id="description">
+    This survey helps us understand user preferences.
+  </p>
 
-        <form id="survey-form">
+  <form id="survey-form">
 
-            <!-- NAME -->
-            <label id="name-label" for="name">Name</label>
-            <input
-                id="name"
-                type="text"
-                placeholder="Enter your name"
-                required
-            >
+    <label id="name-label" for="name">
+      Name
+    </label>
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter your name"
+      required
+    >
 
-            <!-- EMAIL -->
-            <label id="email-label" for="email">Email</label>
-            <input
-                id="email"
-                type="email"
-                placeholder="Enter your email"
-                required
-            >
+    <label id="email-label" for="email">
+      Email
+    </label>
+    <input
+      id="email"
+      type="email"
+      placeholder="Enter your email"
+      required
+    >
 
-            <!-- AGE -->
-            <label id="number-label" for="number">Age</label>
-            <input
-                id="number"
-                type="number"
-                min="10"
-                max="99"
-                placeholder="Age"
-            >
+    <label id="number-label" for="number">
+      Age
+    </label>
+    <input
+      id="number"
+      type="number"
+      min="10"
+      max="99"
+      placeholder="Age"
+    >
 
-            <!-- DROPDOWN -->
-            <label for="dropdown">Which option best describes you?</label>
-            <select id="dropdown">
-                <option value="">Select one</option>
-                <option value="student">Student</option>
-                <option value="professional">Professional</option>
-                <option value="self-learner">Self Learner</option>
-            </select>
+    <p>Which option best describes you?</p>
+    <select id="dropdown">
+      <option value="">Select one</option>
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+    </select>
 
-            <!-- RADIO -->
-            <p class="group-title">Would you recommend this platform?</p>
-            <div class="options">
-                <label>
-                    <input type="radio" name="recommend" value="yes">
-                    Yes
-                </label>
-                <label>
-                    <input type="radio" name="recommend" value="maybe">
-                    Maybe
-                </label>
-                <label>
-                    <input type="radio" name="recommend" value="no">
-                    No
-                </label>
-            </div>
+    <p>Would you recommend us?</p>
+    <label>
+      <input type="radio" name="recommend" value="yes">
+      Yes
+    </label>
+    <label>
+      <input type="radio" name="recommend" value="no">
+      No
+    </label>
 
-            <!-- CHECKBOX -->
-            <p class="group-title">What should we improve?</p>
-            <div class="options">
-                <label>
-                    <input type="checkbox" value="projects">
-                    More projects
-                </label>
-                <label>
-                    <input type="checkbox" value="videos">
-                    Video tutorials
-                </label>
-                <label>
-                    <input type="checkbox" value="support">
-                    Better support
-                </label>
-            </div>
+    <p>What do you like?</p>
+    <label>
+      <input type="checkbox" value="projects">
+      Projects
+    </label>
+    <label>
+      <input type="checkbox" value="community">
+      Community
+    </label>
 
-            <!-- COMMENTS -->
-            <label for="comments">Additional comments</label>
-            <textarea
-                id="comments"
-                placeholder="Share your thoughts..."
-            ></textarea>
+    <p>Any comments?</p>
+    <textarea placeholder="Enter your comments"></textarea>
 
-            <!-- SUBMIT -->
-            <button id="submit" type="submit">
-                Submit Feedback
-            </button>
+    <button id="submit" type="submit">
+      Submit
+    </button>
 
-        </form>
-
-    </div>
+  </form>
 
 </body>
 </html>
