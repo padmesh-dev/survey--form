@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    background: #ffffff;
+    max-width: 520px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    animation: fadeInUp 0.8s ease;
+}
+
+/* TITLE */
+#title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* FORM */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+/* INPUT INTERACTION */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
+    outline: none;
+}
+
+/* GROUPS */
+.group-title {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.options {
+    margin-top: 8px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+/* RADIO & CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* TEXTAREA */
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+#submit {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(79,70,229,0.35);
+}
+
+/* ANIMATION */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
